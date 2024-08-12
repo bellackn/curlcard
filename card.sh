@@ -45,24 +45,22 @@ purple="$(tput setaf 8)" #[?m
 default="$(tput setaf 9)" #[?m
 
 
-cat <<EOF
+cat <<EOF | tee card
 
 ${magenta}╭───────────────────────────────────────────────────────────────╮
 ${magenta}│                                                               │
-${magenta}│${reset}               ${bold}${magenta}Matthias Thym${reset}                                   ${magenta}│
+${magenta}│${reset}               ${bold}${magenta}Nico Bellack${reset}                                    ${magenta}│
+${magenta}│${reset}               ${bold}${purple}Freelance DevOps Expert 🚀 ${reset}                     ${magenta}│
 ${magenta}│                                                               │
-${magenta}│${reset}         ${bold}Web:${reset}  ${white}https://${reset}${cyan}matthias.thym.at                        ${magenta}|
-${magenta}│${reset}        ${bold}Blog:${reset}  ${white}https://${cyan}blog.thym.at                            ${magenta}│
+${magenta}│${reset}         ${bold}Web:${reset}  ${white}https://${reset}${cyan}www.bellack.dev                         ${magenta}│
+${magenta}│${reset}      ${bold}Social:${reset}  ${white}https://${cyan}social.linux.pizza${reset}${dim}/${magenta}@n2o                 ${magenta}│
 ${magenta}│                                                               │
-${magenta}│${reset}    ${bold}LinkedIn:${reset}  ${white}https://${cyan}linkedin.com${reset}${dim}/${magenta}mathym                     ${magenta}│
-${magenta}│${reset}  ${bold}Recruiting:${reset}  ${blue}jobs@thym.at                                    ${magenta}│
+${magenta}│${reset}    ${bold}LinkedIn:${reset}  ${white}https://${cyan}www.linkedin.com${reset}${dim}/in/${magenta}nico-bellack        ${magenta}│
+${magenta}│${reset}  ${bold}Recruiting:${reset}  ${blue}hello@bellack.dev                               ${magenta}│
 ${magenta}│                                                               │
-${magenta}│${reset}    ${bold}Codeberg:${reset}  ${white}https://${cyan}codeberg.org${reset}${dim}/${magenta}totoroot                   ${magenta}│
-${magenta}│${reset}      ${bold}GitHub:${reset}  ${white}https://${cyan}github.com${reset}${dim}/${magenta}totoroot                     ${magenta}│
-${magenta}│${reset}   ${bold}Fediverse:${reset}  ${white}https://${cyan}ibe.social${reset}${dim}/${magenta}@totoroot                    ${magenta}│
-${magenta}│${reset}        ${bold}Chat:${reset}  ${blue}chat@thym.at                                    ${magenta}│
+${magenta}│${reset}      ${bold}GitHub:${reset}  ${white}https://${cyan}github.com${reset}${dim}/${magenta}bellackn                     ${magenta}│
 ${magenta}│                                                               │
-${magenta}│${reset}    ${bold}Curlcard:${reset}  ${green}curl ${cyan}-sL ${white}https://matthias.thym.at/card.sh | ${green}sh  ${magenta}│
+${magenta}│${reset}    ${bold}Curlcard:${reset}  ${green}curl ${cyan}-sL ${white}https://www.bellack.dev/card ${magenta}          │
 ${magenta}│                                                               │
 ${magenta}╰───────────────────────────────────────────────────────────────╯
 EOF
