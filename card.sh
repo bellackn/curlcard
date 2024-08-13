@@ -7,7 +7,7 @@
 ######################################
 # Font attributes                    #
 ######################################
-bold="$(tput bold)" #[1m
+bold="$(tput bold)"      #[1m
 underline="$(tput smul)" #[4m
 end_underline="$(tput rmul)"
 hidden="$(tput invis)"
@@ -33,34 +33,33 @@ bg_default="$(tput setab 9)"
 ######################################
 # Foreground colours                 #
 ######################################
-black="$(tput setaf 0)" #[30m
-red="$(tput setaf 1)" #[31m
-green="$(tput setaf 2)" #[32m
-yellow="$(tput setaf 3)" #[33m
-blue="$(tput setaf 4)" #[34m
+black="$(tput setaf 0)"   #[30m
+red="$(tput setaf 1)"     #[31m
+green="$(tput setaf 2)"   #[32m
+yellow="$(tput setaf 3)"  #[33m
+blue="$(tput setaf 4)"    #[34m
 magenta="$(tput setaf 5)" #[35m
-cyan="$(tput setaf 6)" #[36m
-white="$(tput setaf 7)" #[?m
-purple="$(tput setaf 8)" #[?m
+cyan="$(tput setaf 6)"    #[36m
+white="$(tput setaf 7)"   #[?m
+purple="$(tput setaf 8)"  #[?m
 default="$(tput setaf 9)" #[?m
 
-
 cat <<EOF | tee card
-
-${magenta}╭───────────────────────────────────────────────────────────────╮
-${magenta}│                                                               │
-${magenta}│${reset}               ${bold}${magenta}Nico Bellack${reset}                                    ${magenta}│
-${magenta}│${reset}               ${bold}${purple}Freelance DevOps Expert 🚀 ${reset}                     ${magenta}│
-${magenta}│                                                               │
-${magenta}│${reset}         ${bold}Web:${reset}  ${white}https://${reset}${cyan}www.bellack.dev                         ${magenta}│
-${magenta}│${reset}      ${bold}Social:${reset}  ${white}https://${cyan}social.linux.pizza${reset}${dim}/${magenta}@n2o                 ${magenta}│
-${magenta}│                                                               │
-${magenta}│${reset}    ${bold}LinkedIn:${reset}  ${white}https://${cyan}www.linkedin.com${reset}${dim}/in/${magenta}nico-bellack        ${magenta}│
-${magenta}│${reset}  ${bold}Recruiting:${reset}  ${blue}hello@bellack.dev                               ${magenta}│
-${magenta}│                                                               │
-${magenta}│${reset}      ${bold}GitHub:${reset}  ${white}https://${cyan}github.com${reset}${dim}/${magenta}bellackn                     ${magenta}│
-${magenta}│                                                               │
-${magenta}│${reset}    ${bold}Curlcard:${reset}  ${green}curl ${cyan}-sL ${white}https://www.bellack.dev/card ${magenta}          │
-${magenta}│                                                               │
-${magenta}╰───────────────────────────────────────────────────────────────╯
+${magenta}╭─────────────────────────────────────────────────────────╮
+${magenta}│                                                         │
+${magenta}│${reset}               ${bold}${magenta}Nico Bellack${reset}                              ${magenta}│
+${magenta}│${reset}               ${bold}${purple}Freelance DevOps Expert 🚀 ${reset}               ${magenta}│
+${magenta}│                                                         │
+${magenta}│${reset}         ${bold}Web:${reset}  ${cyan}www.bellack.dev                           ${magenta}│
+${magenta}│${reset}    ${bold}Mastodon:${reset}  ${cyan}social.linux.pizza${reset}${dim}/${magenta}@n2o                   ${magenta}│
+${magenta}│${reset}        ${bold}Chat:${reset}  ${cyan}@bellackn:matrix.org                  ${magenta}    │
+${magenta}│                                                         │
+${magenta}│${reset}    ${bold}LinkedIn:${reset}  ${cyan}www.linkedin.com${reset}${dim}/in/${magenta}nico-bellack          ${magenta}│
+${magenta}│${reset}  ${bold}Recruiting:${reset}  ${blue}hello@bellack.dev                         ${magenta}│
+${magenta}│                                                         │
+${magenta}│${reset}      ${bold}GitHub:${reset}  ${cyan}github.com${reset}${dim}/${magenta}bellackn                       ${magenta}│
+${magenta}│                                                         │
+${magenta}│${reset}    ${bold}Curlcard:${reset}  ${green}curl ${cyan}-L ${white}bellack.dev/card ${magenta}                 │
+${magenta}│                                                         │
+${magenta}╰─────────────────────────────────────────────────────────╯
 EOF
